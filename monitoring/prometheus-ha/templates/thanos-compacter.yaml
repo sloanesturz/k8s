@@ -7,6 +7,7 @@ metadata:
     app: thanos-compactor
 spec:
   replicas: {{ .Values.thanos.compactor.replicas }}
+  serviceName: thanos-compactor
   selector:
     matchLabels:
       app: thanos-compactor

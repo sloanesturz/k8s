@@ -16,6 +16,7 @@ metadata:
   namespace: {{ .Values.namespace }}
 spec:
   replicas: {{ .Values.thanos.ruler.replicas }}
+  serviceName: thanos-ruler
   selector:
     matchLabels:
       app: thanos-ruler
